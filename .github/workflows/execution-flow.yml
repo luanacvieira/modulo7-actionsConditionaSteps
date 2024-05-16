@@ -85,4 +85,4 @@ jobs:
       - name: Saida da Infromação
         run: |
           echo "Ocorreu um erro no processo de deploy"
-          echo "${{ github }}"
+          echo "${{ toJSON(github) }}"
