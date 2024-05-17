@@ -1,0 +1,9 @@
+name: Reusable Deployment Workflow
+on: workflow_call
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output information Dpeloyment
+        run: echo "Deploying the website AND Upoading THE ARTIFACTS..."
+        
