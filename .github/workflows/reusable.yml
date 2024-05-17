@@ -25,4 +25,7 @@ jobs:
         run: ls -R
       - name: Output information Dpeloyment
         run: echo "Deploying the website AND Upoading THE ARTIFACTS..."
+      - name: Set result Output
+        id: set-result
+        run: echo "::set-output name=step-result::'success'"
         
