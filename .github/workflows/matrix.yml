@@ -8,19 +8,10 @@ jobs:
           node-version: [12, 14, 16]
           operation-system: [ubuntu-latest, windows-latest]
           include:
-            - node-version: 12
-              operation-system: ubuntu-latest
-            - node-version: 14
-              operation-system: ubuntu-latest
-            - node-version: 16
-              operation-system: ubuntu-latest
-            - node-version: 12
-              operation-system: windows-latest
-            - node-version: 14
-              operation-system: windows-latest
-            - node-version: 16
-              operation-system: windows-latest
             - node-version: 18
+              operation-system: windows-latest
+          exclude:
+            - node-version: 12
               operation-system: windows-latest
       runs-on: ${{ matrix.operation-system }}
       steps:
